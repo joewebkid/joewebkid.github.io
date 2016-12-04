@@ -20,6 +20,52 @@
 </head>
 <body>
 
+<div class="overlay">
+	<div class="mobile-menu">
+		<div class="row mobile-menu__header">
+			<div class="col-xs-12" id="menu-title">
+				Меню
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<ul>
+					<li class="active">
+						<a href="">
+							Главная
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Услуги
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Цены
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Проекты
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Информация
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Контакты
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <div class="sub__header">
 	<div class="row">
@@ -29,7 +75,7 @@
 					Безопасность 01
 				</div>
 				<div class="pull-right text-right col-xs-6">
-					Телефон: 8(911)814-84-78
+					<span class="phone-label">Телефон: </span>8(911)814-84-78
 				</div>
 			</div>
 		</div>
@@ -37,33 +83,36 @@
 </div>
 
 <div class="header__wrapper">
+	<a href="" class="logo">
+	    <img src="img/logo_ogon.png" alt="logo">
+	</a>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="header">
-					<div class="row navigation">
+					<div class="row navigation ">
 						<div class="col-xs-6 pull-left">
 							<div class="row">
-								<div class="col-xs-4 pull-left text-left navigation__item active">
+								<div class="col-xs-4 pull-left text-left navigation__item" data-target="#main">
 									Главная
 								</div>
-								<div class="col-xs-4 pull-left text-center navigation__item">
+								<div class="col-xs-4 pull-left text-center navigation__item" data-target="#service">
 									Услуги
 								</div>
-								<div class="col-xs-4 pull-left text-right navigation__item">
+								<div class="col-xs-4 pull-left text-right navigation__item" data-target="#main">
 									Цены
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6 pull-right">
+						<div class="col-xs-6 pull-right ">
 							<div class="row">
-								<div class="col-xs-4 pull-left text-left navigation__item">
+								<div class="col-xs-4 pull-left text-left navigation__item" data-target="#service">
 									Проекты
 								</div>
-								<div class="col-xs-4 pull-left text-center navigation__item">
+								<div class="col-xs-4 pull-left text-center navigation__item" data-target="#main">
 									Информация
 								</div>
-								<div class="col-xs-4 pull-left text-right navigation__item">
+								<div class="col-xs-4 pull-left text-right navigation__item" data-target="#service">
 									Контакты
 								</div>
 							</div>
@@ -71,9 +120,12 @@
 					</div>
 					<div class="row navigation__sub">
 						<div class="col-xs-6 pull-left text-right navigation__item--sub">
-							<a href="mailto:bez-01@bk.ru">
+							<a href="mailto:bez-01@bk.ru" class="mail-link">
 								bez-01@bk.ru
 							</a>
+							<div class="sub-menu" id="mobile-menu">
+								Меню
+							</div>
 						</div>
 						<div class="col-xs-6 pull-right text-left navigation__item--sub">
 							<a href="#" class="presentation__link">
@@ -86,11 +138,11 @@
 		</div>
 	</div>
 </div>
-<div class="navigation__panel">
+<div id="main" class="navigation__panel">
 	<div class="row">
 		<div class="col-md-3">
 			<a href="#">
-				Проектирование и монтаж
+				1 Проектирование и монтаж
 			</a>
 			<a href="#">
 				Техническое обслуж. систем любой сложности
@@ -140,7 +192,72 @@
 			</a>
 		</div>
 		<div class="col-md-3">
-			<img src="img/nav_img1.png" alt="">
+			<img src="img/prod.jpg" alt="">
+			<h3>Пожарная <br> сигнализация</h3>
+			<p>
+				Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
+			</p>
+			<a href="#" class="cta">
+				Заказать
+			</a>
+		</div>
+	</div>
+</div>
+<div id="service" class="navigation__panel">
+	<div class="row">
+		<div class="col-md-3">
+			<a href="#">
+				2 Проектирование и монтаж
+			</a>
+			<a href="#">
+				Техническое обслуж. систем любой сложности
+			</a>
+			<a href="#">
+				Рассчитаем
+			</a>
+			<a href="#">
+				Разработаем и согласуем
+			</a>
+			<a href="#">
+				Испытание и защита конструкций
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="#">
+				Проектирование и монтаж
+			</a>
+			<a href="#">
+				Техническое обслуж. систем любой сложности
+			</a>
+			<a href="#">
+				Рассчитаем
+			</a>
+			<a href="#">
+				Разработаем и согласуем
+			</a>
+			<a href="#">
+				Испытание и защита конструкций
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="#">
+				Проектирование и монтаж
+			</a>
+			<a href="#">
+				Техническое обслуж. систем любой сложности
+			</a>
+			<a href="#">
+				Рассчитаем
+			</a>
+			<a href="#">
+				Разработаем и согласуем
+			</a>
+			<a href="#">
+				Испытание и защита конструкций
+			</a>
+		</div>
+		<div class="col-md-3">
+			<img src="img/prod.jpg" alt="">
 			<h3>Пожарная <br> сигнализация</h3>
 			<p>
 				Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
@@ -152,67 +269,69 @@
 	</div>
 </div>
 <div class="carousel">
-	<div class="row ">
-		<div class="col-xs-12">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="slide slide1">
-							<div class="slider__text">
-								<h3>
-									Почему мы
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore
-									magna aliqua. Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco laboris nisi ut aliquip ex ea com.
-								</p>
-								<a href="#" class="cta">
-									Заказать
-								</a>
+	<div class="carousel__wrapper">
+		<div class="row ">
+			<div class="col-xs-12">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide slide1">
+								<div class="slider__text">
+									<h3>
+										Почему мы
+									</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore
+										magna aliqua. Ut enim ad minim veniam, quis nostrud
+										exercitation ullamco laboris nisi ut aliquip ex ea com.
+									</p>
+									<a href="#" class="cta">
+										Заказать
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide slide2">
+								<div class="slider__text">
+									<h3>
+										Почему мы
+									</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore
+										magna aliqua. Ut enim ad minim veniam, quis nostrud
+										exercitation ullamco laboris nisi ut aliquip ex ea com.
+									</p>
+									<a href="#" class="cta">
+										Заказать
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide slide3">
+								<div class="slider__text">
+									<h3>
+										Почему мы
+									</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+										sed do eiusmod tempor incididunt ut labore et dolore
+										magna aliqua. Ut enim ad minim veniam, quis nostrud
+										exercitation ullamco laboris nisi ut aliquip ex ea com.
+									</p>
+									<a href="#" class="cta">
+										Заказать
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="swiper-slide">
-						<div class="slide slide2">
-							<div class="slider__text">
-								<h3>
-									Почему мы
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore
-									magna aliqua. Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco laboris nisi ut aliquip ex ea com.
-								</p>
-								<a href="#" class="cta">
-									Заказать
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="slide slide3">
-							<div class="slider__text">
-								<h3>
-									Почему мы
-								</h3>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-									sed do eiusmod tempor incididunt ut labore et dolore
-									magna aliqua. Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco laboris nisi ut aliquip ex ea com.
-								</p>
-								<a href="#" class="cta">
-									Заказать
-								</a>
-							</div>
-						</div>
-					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
 			</div>
 		</div>
 	</div>
@@ -227,29 +346,57 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-3">
-				<img src="img/nav_img1.png" alt="">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<img src="img/prod.jpg" alt="">
 				<h3>Пожарная <br> сигнализация</h3>
 				<p>
 					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
 				</p>
 			</div>
-			<div class="col-xs-3">
-				<img src="img/nav_img1.png" alt="">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<img src="img/prod.jpg" alt="">
 				<h3>Пожарная <br> сигнализация</h3>
 				<p>
 					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
 				</p>
 			</div>
-			<div class="col-xs-3">
-				<img src="img/nav_img1.png" alt="">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<img src="img/prod.jpg" alt="">
 				<h3>Пожарная <br> сигнализация</h3>
 				<p>
 					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
 				</p>
 			</div>
-			<div class="col-xs-3">
-				<img src="img/nav_img1.png" alt="">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<img src="img/prod.jpg" alt="">
+				<h3>Пожарная <br> сигнализация</h3>
+				<p>
+					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<img src="img/prod.jpg" alt="">
+				<h3>Пожарная <br> сигнализация</h3>
+				<p>
+					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<img src="img/prod.jpg" alt="">
+				<h3>Пожарная <br> сигнализация</h3>
+				<p>
+					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<img src="img/prod.jpg" alt="">
+				<h3>Пожарная <br> сигнализация</h3>
+				<p>
+					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				<img src="img/prod.jpg" alt="">
 				<h3>Пожарная <br> сигнализация</h3>
 				<p>
 					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
@@ -257,37 +404,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-3">
-				<img src="img/nav_img1.png" alt="">
-				<h3>Пожарная <br> сигнализация</h3>
-				<p>
-					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
-				</p>
-			</div>
-			<div class="col-xs-3">
-				<img src="img/nav_img1.png" alt="">
-				<h3>Пожарная <br> сигнализация</h3>
-				<p>
-					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
-				</p>
-			</div>
-			<div class="col-xs-3">
-				<img src="img/nav_img1.png" alt="">
-				<h3>Пожарная <br> сигнализация</h3>
-				<p>
-					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
-				</p>
-			</div>
-			<div class="col-xs-3">
-				<img src="img/nav_img1.png" alt="">
-				<h3>Пожарная <br> сигнализация</h3>
-				<p>
-					Вы экономите свое время, сразу отсеивая неадекватных или случайных кандидатов.
-				</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 text-right">
+			<div class="col-xs-12 text-right cta-row">
 				<a href="#" class="cta">
 					Заказать
 				</a>
@@ -299,7 +416,14 @@
 	<div class="slider">
 		<div class=" container">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-12 text-center">
+					<h1>
+						Нашы работы
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 slider__wrapper">
 					<div class="swiper-container2">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -336,10 +460,10 @@
 <div class="footer">
 	<div class="container">
 		<div class="row sub__footer">
-			<div class="col-xs-6 text-left">
+			<div class="col-sm-6 text-left">
 				Безопасность 01
 			</div>
-			<div class="col-xs-6 text-right">
+			<div class="col-sm-6 text-right">
 				<a href="tel:89291016310" class="tel">89291016310</a> <a href="mailto:bez-01@bk.ru">bez-01@bk.ru</a>
 			</div>
 		</div>
