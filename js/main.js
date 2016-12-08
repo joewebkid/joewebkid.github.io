@@ -21,10 +21,12 @@
 
 	$('#menu-title').click( function () {
 		$('.overlay').css('left', '-100%');
+		$('body').removeAttr('style');
 	});
 
 	$('#mobile-menu').click ( function () {
 		$('.overlay').css('left', '0');
+		$('body').css('overflow','hidden');
 	});
 
  //    $('.navigation__item').click( function (e) {
