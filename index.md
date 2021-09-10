@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Cv summary
 ---
 
 {% include header.md %}
